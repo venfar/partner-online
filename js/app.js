@@ -41,8 +41,8 @@ $(window).resize(function () {
 });
 
 $(".application-form").submit(function () {
-  $("#modal-application").modal("hide");
-  $("#modal-application-sent").modal("show");
+  $(".application").html('<div class="application-sent text-center"> <img src="/img/icons/sending.svg" width="64" height="64" alt="Заявка отправлена"> <h2 class="modal-title">Ваша заявка отправлена!</h2> <p class="mb-5">Мы скоро свяжемся с вами для обсуждения проекта.</p> <button type="button" class="btn" data-bs-dismiss="modal">Хорошо</button> </div>')
+  $(".application").addClass("modal-reduction");
 });
 
 $("#navbarToggler").click(function () {
