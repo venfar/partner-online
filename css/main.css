@@ -64,7 +64,6 @@ a {
 }
 
 .menu-item {
-  width: auto;
   padding: 10px 16px;
   border-radius: 8px;
 }
@@ -362,10 +361,6 @@ a {
     "logo tel btn"
     "nav nav nav";
     row-gap: 8px;
-  }
-
-  .menu-item {
-    width: 100%;
   }
 
   .service-item {
