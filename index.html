@@ -9,16 +9,16 @@
 </head>
 <body>
   <header class="header">
-    <div class="container d-flex justify-content-between">
-      <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand logo">
-          <img src="img/logo.png" alt="Логотип «Partner Online»">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">
+      <a class="logo">
+        <img class="img-fluid" src="img/logo.png" alt="Логотип Partner-ka">
+      </a>
+      <nav class="nav navbar navbar-expand-sm p-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации" id="navbarToggler">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav justify-content-around justify-content-lg-start w-100">
             <li class="menu-item nav-item">
               <a class="nav-link p-0" href="#">Сайты</a>
             </li>
@@ -35,12 +35,13 @@
               <a class="nav-link p-0" href="#">Кодинг</a>
             </li>
           </ul>
+          <div class="menu-item">
+            <a class="phone-number d-inline d-sm-none" href="tel:+79636893383">+7 (963) 689-33-83</a>
+          </div>
         </div>
       </nav>
-      <div class="feedback d-flex align-items-center">
-        <a href="tel:+79636893383">+7 (963) 689-33-83</a>
-        <button class="btn" type="button">Оставить заявку</button>
-      </div>
+      <a class="phone-number d-none d-sm-inline" href="tel:+79636893383">+7 (963) 689-33-83</a>
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-application">Оставить заявку</button>
     </div>
   </header>
   <main>
@@ -49,16 +50,16 @@
     </div>
     <section class="features">
       <div class="container">
-        <div class="row row-cols-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
           <div class="col">
             <div class="feature-item feature-item-1 d-flex flex-column justify-content-between">
-              <h3>Разработка<br> сайтов</h3>
+              <h3>Разработка сайтов</h3>
               <p>Любой сайт на любой<br> платформе под ключ</p>
             </div>
           </div>
           <div class="col">
             <div class="feature-item feature-item-2 d-flex flex-column justify-content-between">
-              <h3>Реклама<br> и продвижение</h3>
+              <h3>Реклама и продвижение</h3>
               <p>Настройка, оптимизация,<br> продвижение, брендинг</p>
             </div>
           </div>
@@ -81,8 +82,8 @@
             </div>
           </div>
           <div class="col">
-            <div class="feature-item feature-item-6 feature-item-request d-flex flex-column justify-content-between">
-              <h3>Оставьте<br> заявку</h3>
+            <div class="feature-item feature-item-6 feature-item-request d-flex flex-column justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-application">
+              <h3>Оставьте заявку</h3>
               <p>Мы свяжемся с вами<br> и обсудим детали проекта</p>
             </div>
           </div>
@@ -92,48 +93,115 @@
     <section class="services">
       <div class="container">
         <ul class="services-list row m-0 list-unstyled">
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-1.svg" alt="Сайт Визитка">
-            <p>Сайт<br> Визитка</p>
+          <li class="service-item col col-6 col-sm-3 col-lg">
+            <img src="/img/icons/service-icon-1.svg" width="32" height="32" alt="Сайт Визитка">
+            <div class="text-wrapper">
+              <h3>Сайт<br> Визитка</h3>
+            </div>
           </li>
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-2.svg" alt="Сайт Каталог">
-            <p>Сайт<br> Каталог</p>
+          <li class="service-item col col-6 col-sm-3 col-lg">
+            <img src="/img/icons/service-icon-2.svg" width="32" height="32" alt="Сайт Каталог">
+            <div class="text-wrapper">
+              <h3>Сайт<br> Каталог</h3>
+            </div>
           </li>
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-3.svg" alt="Интернет Магазин">
-            <p>Интернет<br> Магазин</p>
+          <li class="service-item col col-6 col-sm-3 col-lg">
+            <img src="/img/icons/service-icon-3.svg" width="32" height="32" alt="Интернет Магазин">
+            <div class="text-wrapper">
+              <h3>Интернет<br> Магазин</h3>
+            </div>
           </li>
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-4.svg" alt="Landing Page">
-            <p>Landing<br> Page</p>
+          <li class="service-item col col-6 col-sm-3 col-lg">
+            <img src="/img/icons/service-icon-4.svg" width="32" height="32" alt="Landing Page">
+            <div class="text-wrapper">
+              <h3>Landing<br> Page</h3>
+            </div>
           </li>
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-5.svg" alt="Корпоративный Сайт">
-            <p>Корпоративный Сайт</p>
+          <li class="service-item col col-6 col-sm-3 col-lg">
+            <img src="/img/icons/service-icon-5.svg" width="32" height="32" alt="Корпоративный Сайт">
+            <div class="text-wrapper">
+              <h3>Корпоративный Сайт</h3>
+            </div>
           </li>
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-6.svg" alt="Промо Сайт">
-            <p>Промо<br> Сайт</p>
+          <li class="service-item col col-6 col-sm-3 col-lg">
+            <img src="/img/icons/service-icon-6.svg" width="32" height="32" alt="Промо Сайт">
+            <div class="text-wrapper">
+              <h3>Промо<br> Сайт</h3>
+            </div>
           </li>
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-7.svg" alt="Портал">
-            <p>Портал</p>
+          <li class="service-item col col-6 col-sm-3 col-lg">
+            <img src="/img/icons/service-icon-7.svg" width="32" height="32" alt="Портал">
+            <div class="text-wrapper">
+              <h3>Портал</h3>
+            </div>
           </li>
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-8.svg" alt="Блог">
-            <p>Блог</p>
+          <li class="service-item col col-6 col-sm-3 col-lg">
+            <img src="/img/icons/service-icon-8.svg" width="32" height="32" alt="Блог">
+            <div class="text-wrapper">
+              <h3>Блог</h3>
+            </div>
           </li>
-          <li class="service-item col">
-            <img src="/img/icons/service-icon-9.svg" alt="Обслуживание">
-            <p>Обслуживание</p>
+          <li class="service-item d-none d-lg-block col col-lg">
+            <img src="/img/icons/service-icon-9.svg" width="32" height="32" alt="Обслуживание">
+            <div class="text-wrapper">
+              <h3>Обслуживание</h3>
+            </div>
+          </li>
+          <li class="service-item col col-12 d-lg-none">
+             <a class="services-link d-lg-inline-block m-0" href="#">Все услуги</a>
           </li>
         </ul>
-        <a class="services-link" href="#">Все услуги</a>
+        <a class="services-link d-none d-lg-inline-block" href="#">Все услуги</a>
       </div>
     </section>
   </main>
 
+  <div class="modal fade" id="modal-application" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content application">
+        <div class="modal-header">
+          <h2 class="modal-title">Заявка</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form class="application-form" action="#">
+            <label for="application-name" class="form-label mb-0">Имя</label>
+            <input type="text" class="form-control mb-3" id="application-name" placeholder="Иван" required>
+            <label for="application-tel" class="form-label mb-0">Телефон</label>
+            <input type="tel" class="form-control mb-3" id="application-tel" placeholder="+7 (999) 999-99-99" required>
+            <label for="application-email" class="form-label mb-0">Почта</label>
+            <input type="email" class="form-control mb-3" id="application-email" placeholder="mail@example.com" required>
+            <label for="application-technical-task" class="form-label mb-0">Техническое задание (необязательно)</label>
+            <div class="form-control form-control-lg position-relative d-flex justify-content-between align-items-center" id="file-upload">
+              <span id="application-file">Файл не найден</span>
+              <input type="file" class="file-form" id="application-technical-task">
+              <div class="file-btn"></div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="application-consent" required>
+              <label for="application-consent" class="form-check-label">Я даю Partner-ka согласие на обработку указанных данных на условиях <a class="privacy-policy-link" href="#">Политики конфиденциальности</a> для целей рассмотрения заявки и обратной связи по вопросам её заполнения</label>
+            </div>
+            <button type="submit" class="btn w-100">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-application-sent" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="application-sent text-center">
+          <img src="/img/icons/sending.svg" width="64" height="64" alt="Заявка отправлена">
+          <h2 class="modal-title">Ваша заявка отправлена!</h2>
+          <p class="mb-5">Мы скоро свяжемся с вами для обсуждения проекта.</p>
+          <button type="button" class="btn" data-bs-dismiss="modal">Хорошо</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
