@@ -5,7 +5,7 @@ body {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
-  background: rgba(245, 247, 250, 0.5) url("/img/background.png") calc(50% + 600px) -400px no-repeat;
+  background: rgba(245, 247, 250, 0.5) url("../img/background.png") calc(50% + 600px) -400px no-repeat;
 }
 
 a {
@@ -126,7 +126,7 @@ a {
   right: 24px;
   width: 32px;
   height: 32px;
-  background-image: url("/img/icons/east.svg");
+  background-image: url("../img/icons/east.svg");
 }
 
 .feature-item::after {
@@ -141,27 +141,27 @@ a {
 }
 
 .feature-item-1::after {
-  background-image: url("/img/icons/feature-icon-1.svg");
+  background-image: url("../img/icons/feature-icon-1.svg");
 }
 
 .feature-item-2::after {
-  background-image: url("/img/icons/feature-icon-2.svg");
+  background-image: url("../img/icons/feature-icon-2.svg");
 }
 
 .feature-item-3::after {
-  background-image: url("/img/icons/feature-icon-3.svg");
+  background-image: url("../img/icons/feature-icon-3.svg");
 }
 
 .feature-item-4::after {
-  background-image: url("/img/icons/feature-icon-4.svg");
+  background-image: url("../img/icons/feature-icon-4.svg");
 }
 
 .feature-item-5::after {
-  background-image: url("/img/icons/feature-icon-5.svg");
+  background-image: url("../img/icons/feature-icon-5.svg");
 }
 
 .feature-item-6::after {
-  background-image: url("/img/icons/feature-icon-6.svg");
+  background-image: url("../img/icons/feature-icon-6.svg");
 }
 
 .feature-item-request {
@@ -170,7 +170,7 @@ a {
 }
 
 .feature-item-request::before {
-  background-image: url("/img/icons/east-black.svg");
+  background-image: url("../img/icons/east-black.svg");
 }
 
 .feature-item h3 {
@@ -228,7 +228,7 @@ a {
   right: -36px;
   width: 24px;
   height: 24px;
-  background-image: url("/img/icons/east-black.svg");
+  background-image: url("../img/icons/east-black.svg");
   background-size: cover;
 }
 
@@ -319,7 +319,7 @@ a {
   right: 4px;
   width: 40px;
   height: 40px;
-  background: rgba(255, 204, 51, 0.1) url("/img/icons/attach_file.svg") 8px 8px no-repeat;
+  background: rgba(255, 204, 51, 0.1) url("../img/icons/attach_file.svg") 8px 8px no-repeat;
   border-radius: 8px;
 }
 
@@ -428,7 +428,7 @@ a {
   }
 
   .nav-open {
-    background-image: url("/img/icons/close.svg");
+    background-image: url("../img/icons/close.svg");
   }
 
   .nav .navbar-collapse {
