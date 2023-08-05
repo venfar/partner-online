@@ -93,7 +93,7 @@ a {
   left: -32px;
   width: 24px;
   height: 24px;
-  background-image: url("/img/icons/phone.svg");
+  background-image: url("../img/icons/phone.svg");
 }
 
 .header .btn {
